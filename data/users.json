@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "correo": "test@test.com",
+      "nombre": "test",
+      "contraseña": "prueba"
+    },
+    {
+      "correo": "paco@paco.com",
+      "nombre": "paco",
+      "contraseña": "paco"
+    },
+    {
+      "correo": "manolin@gmail.com",
+      "nombre": "manolin",
+      "contraseña": "manolo"
+    },
+    {
+      "correo": "julito@gmail.com",
+      "nombre": "julito",
+      "contraseña": "julito"
+    }
+  ]
+}
