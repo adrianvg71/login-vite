@@ -12,6 +12,9 @@ app.use('/data', express.static('data'));
 // Configura CORS para permitir solicitudes desde cualquier origen
 app.use(cors());
 
+// Reemplaza 'dist' con la carpeta correcta en la que se generan los archivos de construcción.
+app.use(express.static('dist'));
+
 // Configura Express para servir index.html como la página principal
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
