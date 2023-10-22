@@ -1,7 +1,11 @@
 // Al cargar la página y después de verificar el token
 const dataUsuario = JSON.parse(localStorage.getItem('usuario'));
-console.log(dataUsuario)
+
 if (dataUsuario) {
+  let body = document.querySelector("body");
+  
+  body.innerHTML = `<h1>Bienvenido/a</h1>
+  <button class="cerrar-sesion">Cerrar sesion</button>`;
   // Ahora tienes acceso a todos los datos del usuario
   const nombreUsuario = dataUsuario.nombre;
   // Otros datos del usuario si es necesario

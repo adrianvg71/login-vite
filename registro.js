@@ -1,5 +1,6 @@
 import express from 'express';
 import fs from 'fs';
+import cors from 'cors';
 
 const app = express();
 
@@ -7,6 +8,9 @@ app.use(express.json());
 
 app.use(express.static('public'));
 app.use('/data', express.static('data'));
+
+// Configura CORS para permitir solicitudes desde cualquier origen
+app.use(cors());
 
 // Configura Express para servir index.html como la página principal
 app.get('/', (req, res) => {
@@ -35,6 +39,6 @@ app.post('/registro', (req, res) => {
   }
 });
 
-app.listen(5173, () => {
-  console.log('Servidor en ejecución en http://localhost:5173');
+app.listen(3000, () => {
+  console.log('Servidor en ejecución en https://rt3x1jtj-3000.uks1.devtunnels.ms/');
 });

@@ -51,7 +51,7 @@ document.querySelector(".signUp").addEventListener("click", async () => {
   console.log(data)
 
   try {
-    const response = await fetch('http://localhost:5173/registro', {
+    const response = await fetch('https://rt3x1jtj-3000.uks1.devtunnels.ms/registro', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
